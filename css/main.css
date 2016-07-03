@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: #f3eae7;
+}
+
+body {
+    margin: 0 10px;
+    height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -moz-display: flex;
+    -moz-justify-content: center;
+}
+
+a {
+    align-items: center;
+    display: flex;
+    color: #caaa9d;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}

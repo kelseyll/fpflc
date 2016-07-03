@@ -1,0 +1,9 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}

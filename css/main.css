@@ -3,13 +3,36 @@
 }
 
 html {
-    background-color: #f3eae7;
+    background-color: #B2B2B2;
 }
 
 body {
     /*margin: 0 10px;*/
     height: 1000px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.link-underline::before {
+    content: '';
+    position: absolute;
+    width: 330px;
+    height: 10px;
+    background-color: #FFF;
+    z-index: -1;
+    transform: translateY(14px);
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+}
+
+.link-underline:hover::before {
+    background-color: #ebebeb;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
 }
 
 a.title {
@@ -24,8 +47,10 @@ a.title {
 .hero {
     height: 80vh;
 }
+
 .hero-relative,
-.hero-fixed {
+.hero-fixed,
+.hero-fixed-2 {
     background: url('../images/title.svg');
     background-size: 40vw;
     height: 100%;
@@ -33,9 +58,10 @@ a.title {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .hero-fixed {
     top: 0;
-    background: url('../images/FUTURE-LATER.svg');
+    background: url('../images/title-fixed.svg');
     background-position: center;
     background-size: 40vw;
     background-repeat: no-repeat;
@@ -43,7 +69,22 @@ a.title {
     width: 100%;
     left: 0;
     position: fixed;
+    z-index: 1;
 }
+
+.hero-fixed-2 {
+    top: 0;
+    background: url('../images/bg.png');
+    background-position: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
 .title img {
     max-width: 100%;
     position: relative;
@@ -59,10 +100,29 @@ img:nth-child(2n) {
     display: block;
 }
 
+.description {
+    height: 500px;
+    position: relative;
+    z-index: 4;
+}
+
 .description p {
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0;
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 400px;
-    line-height: 1.5;
+    max-width: 727px;
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+strong  {
+    font-weight: 400;
+}
+
+footer {
+    height: 150px;
 }

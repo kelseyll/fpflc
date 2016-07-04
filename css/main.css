@@ -2,14 +2,21 @@
     margin: 0;
 }
 
-body {
-    /*height: 1000px;*/
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+html {
+    opacity: 0;
+    background-color: #f1e9e5;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
 
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .bg-fader {
-    background-color: rgb(202,170,157);
+    background-color: #f1e9e5;
+    background-image: url('../images/bg.png');
     z-index: -2;
     position: fixed;
     height: 100%;
@@ -57,6 +64,7 @@ a.title {
 
 .hero-relative,
 .hero-fixed {
+    padding-top: 150px;
     background: url('../images/title.svg');
     background-size: 90vw;
     height: 100%;

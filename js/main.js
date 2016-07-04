@@ -10,8 +10,7 @@ $( document ).ready(function() {
     $(window).scroll(function(){
         $(".hero-fixed").css("opacity", 1 - $(window).scrollTop() / 300);
         $(".hero-relative").css("opacity", 1 - $(window).scrollTop() / 300);
-        $(".hero-fixed-2").css("opacity", 1 - $(window).scrollTop() / 300);
         $(".description p").css("opacity", 0 + ( $(window).scrollTop() / 500) );
-        $(".bg-fader").css("opacity", 1 - ( $(window).scrollTop() / 500) );
+        $(".bg-fader").css("opacity", 1 - ( $(window).scrollTop() / 300) );
     });
 });

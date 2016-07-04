@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    /*margin: 0 10px;*/
+    min-width: 339px;
     height: 1000px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 

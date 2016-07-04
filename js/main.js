@@ -1,6 +1,10 @@
 $( document ).ready(function() {
 
+    // Scroll to top on refresh
     $(this).scrollTop(0);
+
+    // Print out scroll values
+    console.log($(window).scrollTop());
 
     // Fade elements on scroll
     $(window).scroll(function(){
@@ -8,13 +12,6 @@ $( document ).ready(function() {
         $(".hero-relative").css("opacity", 1 - $(window).scrollTop() / 300);
         $(".hero-fixed-2").css("opacity", 1 - $(window).scrollTop() / 300);
         $(".description p").css("opacity", 0 + ( $(window).scrollTop() / 500) );
+        $(".bg-fader").css("opacity", 1 - ( $(window).scrollTop() / 500) );
     });
-
-    // Change background color on scroll
-    $(document).scroll(function() {
-       var alpha = Math.min(0.7 + 0.4 * $(this).scrollTop() / 210, 0.9);
-       var channel = Math.round(alpha * 255);
-       $("html").css('background-color', 'rgb(' + channel + ',' + channel + ',' + channel + ')');
-   });
-
 });

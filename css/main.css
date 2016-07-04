@@ -112,7 +112,7 @@ img:nth-child(2n) {
     font-family: 'Roboto Mono', monospace;
     opacity: 0;
     display: block;
-    margin: 0 10px;
+    margin: 0 16px;
     max-width: 750px;
     line-height: 1.8;
     font-size: 15px;

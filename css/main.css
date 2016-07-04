@@ -49,10 +49,9 @@ a.title {
 }
 
 .hero-relative,
-.hero-fixed,
-.hero-fixed-2 {
+.hero-fixed {
     background: url('../images/title.svg');
-    background-size: 40vw;
+    background-size: 90vw;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -63,8 +62,8 @@ a.title {
     top: 0;
     background: url('../images/title-fixed.svg');
     background-position: center;
-    background-size: 40vw;
     background-repeat: no-repeat;
+    background-size: 90vw;
     height: 80vh;
     width: 100%;
     left: 0;
@@ -110,19 +109,38 @@ img:nth-child(2n) {
     font-family: 'Roboto Mono', monospace;
     opacity: 0;
     display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 727px;
+    margin: 0 10px;
+    max-width: 750px;
     line-height: 1.8;
     font-size: 15px;
-    font-weight: 200;
-    margin-bottom: 50px;
+    font-weight: 300;
+    padding-bottom: 50px;
 }
 
 strong  {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 footer {
     height: 150px;
+}
+
+@media (min-width: 550px) {
+    .hero-relative,
+    .hero-fixed {
+        background-size: 70vw;
+    }
+    .hero-fixed {
+        height: 80vh;
+    }
+    .description p {
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 750px) {
+    .description p {
+        margin: 0 auto;
+        width: 100%;
+    }
 }

@@ -20,6 +20,7 @@ body {
     background: -o-linear-gradient(#73778f, #7b7b7b, #e4afaf);
     background: -moz-linear-gradient(#73778f, #7b7b7b, #e4afaf);
     background: linear-gradient(#73778f, #7b7b7b, #e4afaf);
+    background-attachment:scroll;
     z-index: -2;
     position: fixed;
     height: 100%;
@@ -89,6 +90,10 @@ a.title {
     z-index: 1;
 }
 
+.hero-relative  {
+    display: none;
+}
+
 .title img {
     max-width: 100%;
     position: relative;
@@ -152,6 +157,9 @@ footer {
     .hero-fixed {
         display: inherit;
         height: 80vh;
+    }
+    .hero-relative {
+        display: inherit;
     }
     .description p {
         margin: 0 20px;

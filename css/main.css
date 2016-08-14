@@ -26,10 +26,10 @@ body {
 
 .bg-fader {
     background-color: #f1e9e5;
-    background: -webkit-linear-gradient(#73778f, #7b7b7b, #e4afaf);
-    background: -o-linear-gradient(#73778f, #7b7b7b, #e4afaf);
-    background: -moz-linear-gradient(#73778f, #7b7b7b, #e4afaf);
-    background: linear-gradient(#73778f, #7b7b7b, #e4afaf);
+    background: -webkit-linear-gradient(#b9bcce, #ddd, #DCBCBB);
+    background: -o-linear-gradient(#b9bcce, #ddd, #DCBCBB);
+    background: -moz-linear-gradient(#b9bcce, #ddd, #DCBCBB);
+    background: linear-gradient(#b9bcce, #ddd, #DCBCBB);
     background-attachment:scroll;
     z-index: -2;
     /*position: fixed;*/
@@ -48,9 +48,9 @@ a {
     display: none;
     content: '';
     position: absolute;
-    width: 330px;
+    width: 180px;
     height: 10px;
-    background-color: #DCBCBB;
+    background-color: #ddd;
     z-index: -1;
     transform: translateY(14px);
     -webkit-transition: 1s; /* Safari */
@@ -85,7 +85,7 @@ a.title {
 }
 
 .hero-relative {
-    background: url('../images/title-black.svg');
+    background: url('../images/title-fixed.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90vw;
@@ -179,6 +179,7 @@ strong  {
 }
 
 footer {
+    margin-top: 150px;
     height: 8vh;
 }
 
@@ -236,7 +237,7 @@ footer {
     }
     .hero-relative,
     .hero-fixed {
-        background-size: 50vw;
+        background-size: 40vw;
     }
 }
 

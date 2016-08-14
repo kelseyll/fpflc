@@ -190,7 +190,6 @@ footer {
 
 @media (min-width: 750px) {
     .bg-fader {
-        background-image: url('../images/bg.png');
         background-color: #f1e9e5;
         position: fixed;
     }
